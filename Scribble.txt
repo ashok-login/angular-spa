@@ -1,0 +1,26 @@
+Agenda: How to create a component in Angular?
+
+path>ng generate component <component-name>
+ng g c <component-name>
+
+ng generate component bootstrap-practice
+
+Agenda: Data-Binding in Angular
+Two-way data binding:
+
+Agenda: WAP to enable button only after 3 seconds after loading / reloading the page.
+
+01. Create one variable in component class to enable or disable the button.
+02. Use JavaScript function to alter the above variable.
+
+Agenda: Discuss about click event in Angular. Show some message when clicked on the button.
+
+Agneda: Enter some message in the textbox. Show that message upon clicking on the button. If the textbox is blank, the button should be disabled.
+
+(input)
+
+
+TASK: The program sould meet the below requirements.
+* "Add Server" button should be enabled two seconds after the page has loaded / reloaded.
+* When clicked on "Add Server" button, the message should be shown as: "Server was created! Name is: <name_used>
+* "Add Server" button should not be enabled if the server name is blank.
