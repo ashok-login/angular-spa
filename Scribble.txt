@@ -48,5 +48,38 @@ Agenda: There should be one input element, and one button. When the user clicks 
 
 
 
+<table>
+  <tr>
+    <td>Some data</td>
+  </tr>
+</table>
+
+
+
+Agenda: Declare showCompanyName bool variable inside component class.
+Show the company name with h1 heading if showCompanyName variable is set to true. 
+Show ‘Name is hidden’ message if showCompanyName variable is set to false.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
