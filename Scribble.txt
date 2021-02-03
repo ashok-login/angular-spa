@@ -24,3 +24,29 @@ TASK: The program sould meet the below requirements.
 * "Add Server" button should be enabled two seconds after the page has loaded / reloaded.
 * When clicked on "Add Server" button, the message should be shown as: "Server was created! Name is: <name_used>
 * "Add Server" button should not be enabled if the server name is blank.
+
+03 FEB:
+-------
+Agenda: Write a function to get server status. The output should be something like below.
+The server with ID: 10 is offline
+Show the output in light-red color() background (code: #ff6961) if the server status is offline.
+Show the output in light-green color() background (code: #90EE90) if the server status is online.
+
+
+Agenda: As of now, the server component was developed in such a way that if the server is offline, then the background color is light-red; and if the server is online, then the background color is light-green.
+Add style class to print the message in white color (in addition to light-green color background) if the server is online.
+
+
+
+<h1 ngClass="{'online':'condition'}">Tollplus India Pvt.Ltd</h1>
+
+
+Class binding in Angular:
+<h2 class="text-success" [class=="successClass">Tollplus</h2>
+
+Agenda: There should be one input element, and one button. When the user clicks on the button, log a message to the console whatever is the text entered in this input element.
+
+
+
+
+
