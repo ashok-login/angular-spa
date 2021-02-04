@@ -64,7 +64,24 @@ Show ‘Name is hidden’ message if showCompanyName variable is set to false.
 ------------
 01. Agenda: WAP to print the weekday name for the week day number entered in component.ts file
 
-02. ngFor: Agenda: Print your favorite colors
+02. ngFor: Agenda: Print your favorite colors.
+
+
+
+1,50,000
+
+Agenda: WAP to to show Employees report.
+
+
+
+ employees-report: EmployeesReportComponent
+
+employee.ts
+employee.model.ts
+
+Service:
+
+ng g service _services/serviceName
 
 
 
