@@ -60,9 +60,11 @@ Agenda: Declare showCompanyName bool variable inside component class.
 Show the company name with h1 heading if showCompanyName variable is set to true. 
 Show ‘Name is hidden’ message if showCompanyName variable is set to false.
 
+04-FEB-2021:
+------------
+01. Agenda: WAP to print the weekday name for the week day number entered in component.ts file
 
-
-
+02. ngFor: Agenda: Print your favorite colors
 
 
 

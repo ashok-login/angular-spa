@@ -14,6 +14,11 @@ import { ClassBindingComponent } from './class-binding/class-binding.component';
 import { TemplateReferenceVariableComponent } from './template-reference-variable/template-reference-variable.component';
 import { IfExampleComponent } from './if-example/if-example.component';
 import { IfElseExampleComponent } from './if-else-example/if-else-example.component';
+import { SwitchExampleComponent } from './switch-example/switch-example.component';
+import { NgForExampleComponent } from './ng-for-example/ng-for-example.component';
+import { AngularPipesComponent } from './angular-pipes/angular-pipes.component';
+import { EmployeesReportComponent } from './employees-report/employees-report.component';
+import { EmployeesReportType2Component } from './employees-report-type2/employees-report-type2.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +32,12 @@ import { IfElseExampleComponent } from './if-else-example/if-else-example.compon
     ClassBindingComponent,
     TemplateReferenceVariableComponent,
     IfExampleComponent,
-    IfElseExampleComponent
+    IfElseExampleComponent,
+    SwitchExampleComponent,
+    NgForExampleComponent,
+    AngularPipesComponent,
+    EmployeesReportComponent,
+    EmployeesReportType2Component
   ],
   imports: [
     BrowserModule,
