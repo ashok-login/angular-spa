@@ -112,6 +112,7 @@ Agenda:  "Department-list" component should contain the list of departments. Whe
 Working with Forms in Angular.
 Agenda: Create Course Enrollment Form using different controls like textbox, drop-down-list, radio buttons, checkboxes, and button.
 
+D:\downloaded\path>npm install
 
 
 
