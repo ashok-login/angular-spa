@@ -1,12 +1,17 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs';
+import { IEmployee } from '../_contracts/iemployee';
 import { Employee } from '../_models/employee.model';
 
 @Injectable({
   providedIn: 'root'
 })
 export class EmployeeService {
-
+  private url: string = '/assets/data/employees.json';
   employees: Employee[];
+
+  constructor(private http: HttpClient) { }
 
   getAllEmployees(): Employee[] {
     this.employees = [
@@ -17,5 +22,7 @@ export class EmployeeService {
     return this.employees;
   }
 
-  constructor() { }
+  getEmployeesFromJson(): Observable<IEmployee[]> {
+    return this.http.get<IEmployee[]>(this.url);
+  }
 }

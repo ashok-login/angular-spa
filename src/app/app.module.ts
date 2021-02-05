@@ -1,7 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 
-import { AppRoutingModule } from './app-routing.module';
+import { AppRoutingModule, routingComponents } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BootstrapPracticeComponent } from './bootstrap-practice/bootstrap-practice.component';
 import { TwoWayDataBindingComponent } from './two-way-data-binding/two-way-data-binding.component';
@@ -19,6 +20,13 @@ import { NgForExampleComponent } from './ng-for-example/ng-for-example.component
 import { AngularPipesComponent } from './angular-pipes/angular-pipes.component';
 import { EmployeesReportComponent } from './employees-report/employees-report.component';
 import { EmployeesReportType2Component } from './employees-report-type2/employees-report-type2.component';
+import { GetEmployeesFromJsonComponent } from './get-employees-from-json/get-employees-from-json.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { DepartmentDetailComponent } from './department-detail/department-detail.component';
+import { FormsExample1Component } from './forms-example1/forms-example1.component';
+
+// import { DepartmentListComponent } from './department-list/department-list.component';
+// import { EmployeeListComponent } from './employee-list/employee-list.component';
 
 @NgModule({
   declarations: [
@@ -37,12 +45,20 @@ import { EmployeesReportType2Component } from './employees-report-type2/employee
     NgForExampleComponent,
     AngularPipesComponent,
     EmployeesReportComponent,
-    EmployeesReportType2Component
+    EmployeesReportType2Component,
+    GetEmployeesFromJsonComponent,
+    // DepartmentListComponent,
+    // EmployeeListComponent,
+    routingComponents,
+    PageNotFoundComponent,
+    DepartmentDetailComponent,
+    FormsExample1Component
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
