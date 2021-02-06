@@ -5,6 +5,6 @@ export class User {
         public phone: number,
         public topic: string,
         public timePreference: string,
-        public subscription: boolean
+        public subscribe: boolean
     ){}
 }

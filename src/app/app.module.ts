@@ -56,7 +56,7 @@ import { FormsExample1Component } from './forms-example1/forms-example1.componen
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
+    //AppRoutingModule,
     FormsModule,
     HttpClientModule
   ],
