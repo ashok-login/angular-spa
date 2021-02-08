@@ -113,6 +113,35 @@ Working with Forms in Angular.
 Agenda: Create Course Enrollment Form using different controls like textbox, drop-down-list, radio buttons, checkboxes, and button.
 
 D:\downloaded\path>npm install
+------------------------------------------------
+08/02:
+
+Agenda: Bind Data to a Model in Angular. Use "ngModel" properties to provide visual feedback to the user as they’re filling the form. Validate form fields and apply an appropriate class to visually indicate to the user when the form is invalid. Show appropriate validation error message if one exists. Disable the submit button as long as form data is invalid, and enable when the form data becomes valid.
+01. app.module.ts → import FormsModule from @angular/forms into imports array.
+02. Create an instance of User model in forms-example1.component.ts file, and use it to bind to the form.
+03. One example: [(ngModel)]=”userModel.name” ← we’re binding name property of userModel model to ngModel of name input element and vice versa.
+04. Angular Forms Validation, Important ngModel properties to consider:
+untouched, touched
+pristine, dirty
+valid, invalid
+=> F5 -> As the values have been substituted in .ts file, you should be able to see 2nd json pipe.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
