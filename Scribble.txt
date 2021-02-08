@@ -127,12 +127,27 @@ valid, invalid
 => F5 -> As the values have been substituted in .ts file, you should be able to see 2nd json pipe.
 
 
+untouched	* touched
+prestine	dirty
+valid		* invalid
 
+Name - Required
+Email - Required, pattern - RegEx
+Phone - pattern - RegEx
+Dropdown - some value should be selected. Must not be default.
+Options button
+Checkbox
 
+email.errors
 
+10/02:
+------
+Submitting form data in Angular:
+Agenda: Create an Angular service and send data to the server. Handle errors after the form is submitted.
+use the below command to create a service.
+D:\path>ng generate service enrollment
 
-
-
+IMPORTANT NOTE: In enrollment.service.ts file, catchError cannot be imported by default. Hence, we need to write import statement explicity.
 
 
 

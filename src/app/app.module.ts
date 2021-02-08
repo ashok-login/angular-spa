@@ -6,7 +6,7 @@ import { AppRoutingModule, routingComponents } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BootstrapPracticeComponent } from './bootstrap-practice/bootstrap-practice.component';
 import { TwoWayDataBindingComponent } from './two-way-data-binding/two-way-data-binding.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { EnableButtonComponent } from './enable-button/enable-button.component';
 import { ClickExampleComponent } from './click-example/click-example.component';
 import { InputEventDemoComponent } from './input-event-demo/input-event-demo.component';
@@ -24,6 +24,9 @@ import { GetEmployeesFromJsonComponent } from './get-employees-from-json/get-emp
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { DepartmentDetailComponent } from './department-detail/department-detail.component';
 import { FormsExample1Component } from './forms-example1/forms-example1.component';
+import { AuthGuard } from './_guards/auth.guard';
+import { FeedbackComponent } from './feedback/feedback.component';
+import { UnsavedChangesGuard } from './_guards/unsaved-changes.guard';
 
 // import { DepartmentListComponent } from './department-list/department-list.component';
 // import { EmployeeListComponent } from './employee-list/employee-list.component';
@@ -49,18 +52,23 @@ import { FormsExample1Component } from './forms-example1/forms-example1.componen
     GetEmployeesFromJsonComponent,
     // DepartmentListComponent,
     // EmployeeListComponent,
-    routingComponents,
+    //routingComponents,
     PageNotFoundComponent,
     DepartmentDetailComponent,
-    FormsExample1Component
+    FormsExample1Component,
+    FeedbackComponent
   ],
   imports: [
     BrowserModule,
     //AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
-  providers: [],
+  providers: [
+    AuthGuard,
+    UnsavedChangesGuard
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
