@@ -1,6 +1,9 @@
 <div class="container-fluid">
     <h1>Course Enrollment Form</h1>
-    <form #userForm="ngForm">
+    <div class="alert alert-danger" *ngIf="errorMsg">
+        {{ errorMsg }}
+    </div>
+    <form #userForm="ngForm" (ngSubmit)="onSubmit()" novalidate>
         <!-- Returns if form is valid  -->
         Form: {{ userForm.form.valid }}
         <br>

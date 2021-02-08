@@ -127,11 +127,18 @@ valid, invalid
 => F5 -> As the values have been substituted in .ts file, you should be able to see 2nd json pipe.
 
 
+untouched	* touched
+prestine	dirty
+valid		* invalid
 
+Name - Required
+Email - Required, pattern - RegEx
+Phone - pattern - RegEx
+Dropdown - some value should be selected. Must not be default.
+Options button
+Checkbox
 
-
-
-
+email.errors
 
 
 
