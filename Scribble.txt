@@ -149,6 +149,48 @@ D:\path>ng generate service enrollment
 
 IMPORTANT NOTE: In enrollment.service.ts file, catchError cannot be imported by default. Hence, we need to write import statement explicity.
 
+11/02:
+Agenda: Show Users data retrieved from service using Angular.
+Task: For subscribed users, "Subscribed?" column should show as 'Yes', otherwise 'No'
+
+Your\path\angular-spa>npm install
+-------------------------------------------
+Working with Guards - canActivate() guard:
+Agenda: Allow only Authenticated Users to see "Departments" tab. Unauthenticated users should be denied to access the resource. Alert should be shown if unauthenticated user tries to access the "Departments List" tab.
+01. Create guard: >ng generate guard _guards/auth
+02. Create service: >ng g service _services/Auth
+03. We need to register this route as a service. Hence, app.module.ts → register inside "providers" section.
+04. To apply this guard on our route: goto app-routing.module.ts → add this AuthGuard as a parameter to our "departments" path of "routes" constant. It is an array which means that multiple guards can be registered.
+-------------------------------------------
+CanDeactivate Guard is called, whenever we navigate away from the route before the current component gets deactivated. Below is the Agenda to understand the concept better.
+Agenda: There should be a form to accept user feedback. If user tries to navigate from the page without saving, the page should prompt the user to save changes.
+01. Create "feedback" component.
+02. Add required entries to app-routing.module.ts
+03. Modify app.component.html to add "Feedback" as a tab.
+04. Need to import "ReactiveFormsModule" in app.module.ts file.
+05. Write required code in feedback component .ts, and .html files to generate the feedback form.
+06. Create canDeactivate guard by using the following command:
+	ng generate guard _guards/unsaved-changes → Select CanActivate option
+06.1 This guard should be reigstered inside the providers section.
+07. Activate this guard inside app-routing.module.ts file against 'feedback' in routes section.
+08. Write the required code in un-saved-changes.guard.ts file. Here, since we have to develop this guard independent of any component, we need to write "CanComponentLeave" interface, and our component should implement this interface to be able to use this guard functionality.
+09. Implement CanComponentLeave interface on feedback.component.ts → 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

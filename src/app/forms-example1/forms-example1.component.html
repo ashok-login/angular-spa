@@ -91,6 +91,29 @@
         </div>
         <button class="btn btn-primary" type="submit"
                 [disabled]="userForm.form.invalid || topicHasError">Submit form</button>
+        <button class="btn btn-secondary" type="button" (click)="showAllEmployees()">Show All Employees</button>
     </form>
 </div>
-<!-- I'm inside branch: master -->
+<div>
+    <h3>{{ users.length }} users have registered with below details.</h3>
+    <table class="table table-bordered">
+        <thead>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Topic</th>
+            <th>Time preference</th>
+            <th>Subscribed?</th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let user of users">
+                <td>{{ user.name }}</td>
+                <td>{{ user.email }}</td>
+                <td>{{ user.phone }}</td>
+                <td>{{ user.topic }}</td>
+                <td>{{ user.timePreference }}</td>
+                <td><font color='red'>Task</font></td>
+            </tr>
+        </tbody>
+    </table>
+</div>

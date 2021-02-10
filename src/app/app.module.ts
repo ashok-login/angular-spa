@@ -28,8 +28,8 @@ import { AuthGuard } from './_guards/auth.guard';
 import { FeedbackComponent } from './feedback/feedback.component';
 import { UnsavedChangesGuard } from './_guards/unsaved-changes.guard';
 
-// import { DepartmentListComponent } from './department-list/department-list.component';
-// import { EmployeeListComponent } from './employee-list/employee-list.component';
+import { DepartmentListComponent } from './department-list/department-list.component';
+import { EmployeeListComponent } from './employee-list/employee-list.component';
 
 @NgModule({
   declarations: [
@@ -50,9 +50,9 @@ import { UnsavedChangesGuard } from './_guards/unsaved-changes.guard';
     EmployeesReportComponent,
     EmployeesReportType2Component,
     GetEmployeesFromJsonComponent,
-    // DepartmentListComponent,
-    // EmployeeListComponent,
-    //routingComponents,
+    DepartmentListComponent,
+    EmployeeListComponent,
+    routingComponents,
     PageNotFoundComponent,
     DepartmentDetailComponent,
     FormsExample1Component,
@@ -60,7 +60,7 @@ import { UnsavedChangesGuard } from './_guards/unsaved-changes.guard';
   ],
   imports: [
     BrowserModule,
-    //AppRoutingModule,
+    AppRoutingModule,
     FormsModule,
     HttpClientModule,
     ReactiveFormsModule

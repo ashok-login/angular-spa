@@ -2,7 +2,7 @@ import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { User } from '../_models/user';
 import { catchError } from 'rxjs/operators';
-import { throwError } from 'rxjs';
+import { Observable, throwError } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -21,5 +21,10 @@ export class EnrollmentService {
 
   errorHandler(error: HttpErrorResponse) {
     return throwError(error);
+  }
+
+  getUsers(): Observable<User[]> {
+    return this.http.get<User[]>(this.url)
+        .pipe(catchError(this.errorHandler));
   }
 }

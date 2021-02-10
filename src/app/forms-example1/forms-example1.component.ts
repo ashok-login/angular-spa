@@ -11,6 +11,7 @@ export class FormsExample1Component implements OnInit {
   topics = ['Angular', 'React', 'Vue'];
   topicHasError = true;
   submitted = false;
+  public users: User[];
   errorMsg = '';
   // Uncomment below line if topic dropdownlist should contain default value 
   userModel = new User('John', 'john@example.com', 9999988888, 'default', 'morning', true);
@@ -36,5 +37,10 @@ export class FormsExample1Component implements OnInit {
           data => console.log('Success!', data),
           error => this.errorMsg = error.statusText
         );
+  }
+
+  showAllEmployees() {
+    this.enrollmentService.getUsers()
+        .subscribe(data => this.users = data);
   }
 }
