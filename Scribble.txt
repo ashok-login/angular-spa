@@ -148,6 +148,7 @@ use the below command to create a service.
 D:\path>ng generate service enrollment
 
 IMPORTANT NOTE: In enrollment.service.ts file, catchError cannot be imported by default. Hence, we need to write import statement explicity.
+<<<<<<< HEAD
 
 11/02:
 Agenda: Show Users data retrieved from service using Angular.
@@ -190,6 +191,8 @@ Agenda: There should be a form to accept user feedback. If user tries to navigat
 
 
 
+=======
+>>>>>>> b6c8272d501150fb7e6b4fc47cb387c50ed0556f
 
 
 
