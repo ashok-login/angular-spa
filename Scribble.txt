@@ -148,7 +148,6 @@ use the below command to create a service.
 D:\path>ng generate service enrollment
 
 IMPORTANT NOTE: In enrollment.service.ts file, catchError cannot be imported by default. Hence, we need to write import statement explicity.
-<<<<<<< HEAD
 
 11/02:
 Agenda: Show Users data retrieved from service using Angular.
@@ -176,6 +175,12 @@ Agenda: There should be a form to accept user feedback. If user tries to navigat
 07. Activate this guard inside app-routing.module.ts file against 'feedback' in routes section.
 08. Write the required code in un-saved-changes.guard.ts file. Here, since we have to develop this guard independent of any component, we need to write "CanComponentLeave" interface, and our component should implement this interface to be able to use this guard functionality.
 09. Implement CanComponentLeave interface on feedback.component.ts → 
+----------------------------------------------
+Agenda:
+* Create a simple "Registration Form" using Angular Reactive Forms.
+* Set form control values programmatically by using setValue(), and patchValue() methods.
+IMPORTANT NOTE: To be able to work with Reactive Forms, we need to import "ReactiveFormsModule" from '@angular/forms' in app.module.ts file.
+IMPORTANT NOTE: Explain about "Nesting Form Groups in Angular" by showing address section.
 
 
 
@@ -191,8 +196,6 @@ Agenda: There should be a form to accept user feedback. If user tries to navigat
 
 
 
-=======
->>>>>>> b6c8272d501150fb7e6b4fc47cb387c50ed0556f
 
 
 
