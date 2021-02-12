@@ -94,7 +94,7 @@
         <button class="btn btn-secondary" type="button" (click)="showAllEmployees()">Show All Employees</button>
     </form>
 </div>
-<div>
+<div *ngIf="users?.length > 0">
     <h3>{{ users.length }} users have registered with below details.</h3>
     <table class="table table-bordered">
         <thead>

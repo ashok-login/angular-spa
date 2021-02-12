@@ -30,6 +30,11 @@ import { UnsavedChangesGuard } from './_guards/unsaved-changes.guard';
 
 import { DepartmentListComponent } from './department-list/department-list.component';
 import { EmployeeListComponent } from './employee-list/employee-list.component';
+import { FocusControlOnPageLoadComponent } from './focus-control-on-page-load/focus-control-on-page-load.component';
+import { P2cParentComponent } from './p2c-parent/p2c-parent.component';
+import { P2cChildComponent } from './p2c-child/p2c-child.component';
+import { C2pParentComponent } from './c2p-parent/c2p-parent.component';
+import { C2pChildComponent } from './c2p-child/c2p-child.component';
 
 @NgModule({
   declarations: [
@@ -56,7 +61,12 @@ import { EmployeeListComponent } from './employee-list/employee-list.component';
     PageNotFoundComponent,
     DepartmentDetailComponent,
     FormsExample1Component,
-    FeedbackComponent
+    FeedbackComponent,
+    FocusControlOnPageLoadComponent,
+    P2cParentComponent,
+    P2cChildComponent,
+    C2pParentComponent,
+    C2pChildComponent
   ],
   imports: [
     BrowserModule,

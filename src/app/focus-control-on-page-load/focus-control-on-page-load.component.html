@@ -1,0 +1,17 @@
+<div>
+    <label>Name: </label>
+    <input #nameRef type="text" [(ngModel)]="name">
+    <p>Welcome {{ name }}</p>
+</div>
+
+<div>
+    <label>Username: </label>
+    <input type="text" [(ngModel)]="userName" (ngModelChange)="greetTollplus($event)">
+    <p>Welcome {{ userName }}</p>
+</div>
+
+<div>
+    <label>Customer name: </label>
+    <input type="text" [(ngModel)]="customerName">
+    <p>Welcome {{ customerName }}</p>
+</div>
