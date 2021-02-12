@@ -181,6 +181,16 @@ Agenda:
 * Set form control values programmatically by using setValue(), and patchValue() methods.
 IMPORTANT NOTE: To be able to work with Reactive Forms, we need to import "ReactiveFormsModule" from '@angular/forms' in app.module.ts file.
 IMPORTANT NOTE: Explain about "Nesting Form Groups in Angular" by showing address section.
+----------------------------------------------
+12/02:
+Agendas:
+Apply below validation rules to different form fields.
+* Username is required
+* Username field should contain minimum of 3 characters.
+* Custom validation: Username cannot be 'admin'
+* Custom validation: Password cannot be 'password'
+IMPORTANT ALERT: app.component.html → Line 7 → Associate should not think something wrong about userName.
+----------------------------------------------
 
 
 

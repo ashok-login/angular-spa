@@ -7,7 +7,7 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class P2cChildComponent implements OnInit {
   // Below code is commented for Associate's reference
-  // @Input() public parentData: string;
+  //@Input() public parentData: string;
   @Input('parentData') public name: string;
   constructor() { }
 
