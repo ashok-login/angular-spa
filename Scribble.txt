@@ -192,6 +192,13 @@ Apply below validation rules to different form fields.
 IMPORTANT ALERT: app.component.html → Line 7 → Associate should not think something wrong about userName.
 ----------------------------------------------
 
+Agenda: Access a DOM element in the template from the component class - There should be a form with three fields: Name, Username, Customer name fields. As when the form loads in the browser, the focus should go on to the Name input field.
+
+To use ViewChild decorator:
+01. Create a template reference variable on the HTML element
+02. Create a property of type ElementRef
+03. Attach the @ViewChild decorator specifying the template reference variable
+04. Define ngAfterViewInit() method with the logic as per your requirement (If you want to write component initialization code that uses the references injected by this ViewChild decorator, we need to do it inside the ngAfterNewInit() life cycle hook)
 
 
 
