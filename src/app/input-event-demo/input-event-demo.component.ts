@@ -13,7 +13,7 @@ export class InputEventDemoComponent implements OnInit {
   ngOnInit() {
   }
 
-  Button_click() {
+  Button_click(event: Event) {
 
   }
 

@@ -4,8 +4,8 @@
 
 export const environment = {
   production: false,
-  name: '(DEV)',
-  apiBaseUrl: 'http://devUrl.com/'
+  name: '(QA)',
+  apiBaseUrl: 'http://qaUrl.com/'
 };
 
 /*

@@ -37,6 +37,7 @@ import { C2pParentComponent } from './c2p-parent/c2p-parent.component';
 import { C2pChildComponent } from './c2p-child/c2p-child.component';
 import { LocalStorageExampleComponent } from './local-storage-example/local-storage-example.component';
 import { SessionStorageExampleComponent } from './session-storage-example/session-storage-example.component';
+import { AngularBuildDemoComponent } from './angular-build-demo/angular-build-demo.component';
 
 @NgModule({
   declarations: [
@@ -70,7 +71,8 @@ import { SessionStorageExampleComponent } from './session-storage-example/sessio
     C2pParentComponent,
     C2pChildComponent,
     LocalStorageExampleComponent,
-    SessionStorageExampleComponent
+    SessionStorageExampleComponent,
+    AngularBuildDemoComponent
   ],
   imports: [
     BrowserModule,

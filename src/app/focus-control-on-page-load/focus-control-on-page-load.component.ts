@@ -6,7 +6,9 @@ import { AfterViewInit, Component, ElementRef, OnInit, ViewChild } from '@angula
   styleUrls: ['./focus-control-on-page-load.component.css']
 })
 export class FocusControlOnPageLoadComponent implements OnInit, AfterViewInit {
-
+  name: string;
+  userName: string;
+  customerName: string;
   @ViewChild('nameRef', { static: false }) nameElementRef: ElementRef;
 
   constructor() { }
