@@ -1,0 +1,39 @@
+<div class="container-fluid mt-3">
+    <div class="row mb-3">
+        <div class="col-8">
+            Enter some string: <input type="text" [(ngModel)]="stringItem" class="mr-2">
+            <button class="btn btn-primary" (click)="saveStringInSessionStorage()">
+                Save string to session storage
+            </button>
+        </div>
+        <div class="col-4">
+            <button class="btn btn-secondary" (click)="removeFromSessionStorageByKey('string-item')">
+                Remove String from session storage
+            </button>
+        </div>
+    </div>
+    <div class="row mb-3">
+        <div class="col-8">
+            Enter some number: <input type="text" [(ngModel)]="numberItem" class="mr-2">
+            <button class="btn btn-primary" (click)="saveNumberInSessionStorage()">
+                Save number to session storage
+            </button>
+        </div>
+        <div class="col-4">
+            <button class="btn btn-secondary" (click)="removeFromSessionStorageByKey('number-item')">
+                Remove Number from session storage
+            </button>
+        </div>
+    </div>
+    <div class="row" class="col-12 mb-3" align="center">
+        <button class="btn btn-success btn-block" (click)="showAllSessionStorageItems()">Show All Session Storage Items</button>
+    </div>
+    <table>
+        <tr *ngFor="let value of sessionStorageItemValues">
+            <td>{{ value }}</td>
+        </tr>
+    </table>
+    <div class="row" class="col-12 mb-3" align="center">
+        <button class="btn btn-danger btn-block" (click)="clearSessionStorage()">Clear Local Storage</button>
+    </div>
+</div>

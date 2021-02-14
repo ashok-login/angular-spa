@@ -35,6 +35,8 @@ import { P2cParentComponent } from './p2c-parent/p2c-parent.component';
 import { P2cChildComponent } from './p2c-child/p2c-child.component';
 import { C2pParentComponent } from './c2p-parent/c2p-parent.component';
 import { C2pChildComponent } from './c2p-child/c2p-child.component';
+import { LocalStorageExampleComponent } from './local-storage-example/local-storage-example.component';
+import { SessionStorageExampleComponent } from './session-storage-example/session-storage-example.component';
 
 @NgModule({
   declarations: [
@@ -66,7 +68,9 @@ import { C2pChildComponent } from './c2p-child/c2p-child.component';
     P2cParentComponent,
     P2cChildComponent,
     C2pParentComponent,
-    C2pChildComponent
+    C2pChildComponent,
+    LocalStorageExampleComponent,
+    SessionStorageExampleComponent
   ],
   imports: [
     BrowserModule,
