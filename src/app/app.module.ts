@@ -38,6 +38,9 @@ import { C2pChildComponent } from './c2p-child/c2p-child.component';
 import { LocalStorageExampleComponent } from './local-storage-example/local-storage-example.component';
 import { SessionStorageExampleComponent } from './session-storage-example/session-storage-example.component';
 import { AngularBuildDemoComponent } from './angular-build-demo/angular-build-demo.component';
+import { RouteResolverDemoComponent } from './route-resolver-demo/route-resolver-demo.component';
+import { EnrolledUsersListResolver } from './_resolvers/enrolled-users-list.resolver';
+import { EnrolledUsersListComponent } from './enrolled-users-list/enrolled-users-list.component';
 
 @NgModule({
   declarations: [
@@ -72,7 +75,9 @@ import { AngularBuildDemoComponent } from './angular-build-demo/angular-build-de
     C2pChildComponent,
     LocalStorageExampleComponent,
     SessionStorageExampleComponent,
-    AngularBuildDemoComponent
+    AngularBuildDemoComponent,
+    RouteResolverDemoComponent,
+    EnrolledUsersListComponent
   ],
   imports: [
     BrowserModule,
@@ -83,7 +88,8 @@ import { AngularBuildDemoComponent } from './angular-build-demo/angular-build-de
   ],
   providers: [
     AuthGuard,
-    UnsavedChangesGuard
+    UnsavedChangesGuard,
+    EnrolledUsersListResolver
   ],
   bootstrap: [AppComponent]
 })
