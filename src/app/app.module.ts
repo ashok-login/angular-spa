@@ -41,6 +41,8 @@ import { AngularBuildDemoComponent } from './angular-build-demo/angular-build-de
 import { RouteResolverDemoComponent } from './route-resolver-demo/route-resolver-demo.component';
 import { EnrolledUsersListResolver } from './_resolvers/enrolled-users-list.resolver';
 import { EnrolledUsersListComponent } from './enrolled-users-list/enrolled-users-list.component';
+import { TestComponent } from './test/test.component';
+import { CompanyModule } from './company/company.module';
 
 @NgModule({
   declarations: [
@@ -84,7 +86,8 @@ import { EnrolledUsersListComponent } from './enrolled-users-list/enrolled-users
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    CompanyModule
   ],
   providers: [
     AuthGuard,
