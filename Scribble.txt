@@ -199,9 +199,46 @@ To use ViewChild decorator:
 02. Create a property of type ElementRef
 03. Attach the @ViewChild decorator specifying the template reference variable
 04. Define ngAfterViewInit() method with the logic as per your requirement (If you want to write component initialization code that uses the references injected by this ViewChild decorator, we need to do it inside the ngAfterNewInit() life cycle hook)
+----------------------------------------------
+15/02:
+Using Route Resolvers to retrieve data:
+Agenda: Show Enrolled Users List in report format.
+01. Create enrolled_users_list.resolver.ts file inside _resolvers folder.
+02. Since EnrolledUsersListResolver is a resolver, we need to provide this inside "providers" section.
+03. Since EnrolledUsersListResolver is a route-resolver, we need to add this to "routes" constant inside app-routing.module.ts
+04. Write code in enrolled-users-list.component.ts → ngOnInit() method to subscribe for the data.
+05. Write code in enrolled-users-list.component.html file to show report in table format.
+----------------------------------------------
+15/02:
+Agenda: What is session management? What are cookies?
 
+Introduction to session storage, and local storage:
+* SessionStorage and LocalStorage are known as the web storage. Data can be stored on the client side by using these APIs. These two are the two different mechanisms to store the data at client side.
+* Getting data from web storage is much faster than getting data from server by making network calls.
+* Session storage data won't be sent to server by making network request calls.
+* Session storage data can hold upto 5MB.
+* Local storage data can hold upto 10MB.
 
+* The advantage of local storage over the session storage is that, local storage won't expire itself. Data in the LocalStorage persists till the user manually delete it.
 
+* Both session storage, and local storage stores data in key-value pair format.
+* We should NOT store secure information such as user credentials in Web storage. Web storage always stores the data in the plan text format.
+* Show local storage, and session storage information from amazon.in website. Also, show that local storage, and session storage information can be accessed from console window by using below commands:
+window.localStorage
+window.sessionStorage
+Project: angular-spa component: local-storage-example, session-storage-example
+
+Agenda: WAP to 
+* Save strings, and integers into local storage
+* Show local storage information
+* Remove individual local storage items
+* Clear everything from local storage
+
+Agenda: WAP to
+* Save strings, and integers into session storage
+* Show session storage information
+* Remove individual session items
+* Clear everything from session storage
 
 
 
